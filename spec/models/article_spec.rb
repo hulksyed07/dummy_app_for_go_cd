@@ -21,7 +21,7 @@ RSpec.describe Article, type: :model do
   	end
 
   	it "should update an article with valid params" do
-	  	@article.update_attribute(:title, 'Article_2')
+	  	@article.update(title: 'Article_2')
 	  	expect(@article.reload.title).to eq('Article_2')
 	  end
 
